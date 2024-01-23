@@ -1,0 +1,160 @@
+font-face {
+    font-family: "Inter var", sans-serif;
+    font-display: swap;
+    src: url("../fonts/Ferrum.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter var", sans-serif;
+    font-display: swap;
+    src: url("../fonts/Morice-Bejar.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Inter var", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*VARIABLES */
+html {
+    --myred: #cd2913;
+    --mygray: #cccccc;
+    --mysilver: #aaaaaa5b;
+    --mydark: #7a7a7a;
+    --myblack: #111;
+    --mygreen: rgb(88, 202, 31);
+}
+
+/*--------------------*/
+
+body {
+    color: var(--myblack);
+    background: var(--mygray);
+    /*background-image: url(https://proprikol.ru/wp-content/uploads/2020/08/krasivye-kartinki-kotikov-60.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template: minmax(50px, auto) 1fr minmax(50px, auto)/1fr;
+    grid-template-areas: "header""main";
+}
+
+.container {
+    box-sizing: content-box;
+    max-width: 80rem;
+    min-width: 300px;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--myblack);
+    transition: color 0.2s ease-in;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #f13a23;
+    transition: color 0.1s ease-out;
+}
+
+iframe {
+    display: none;
+}
+
+#header_img {
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 11px;
+}
+
+#root > form, .login-container > form{
+    display: flex;
+    justify-content: center;
+}
